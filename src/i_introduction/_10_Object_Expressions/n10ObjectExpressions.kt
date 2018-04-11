@@ -17,6 +17,5 @@ fun todoTask10(): Nothing = TODO(
 )
 
 fun task10(list: List<Int>): List<Int> {
-    Collections.sort(list, todoTask10())
-    return list
+    return list.sortedWith(Comparator { o1, o2 -> o2 - o1 })
 }
