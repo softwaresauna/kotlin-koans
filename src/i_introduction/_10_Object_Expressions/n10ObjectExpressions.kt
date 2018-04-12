@@ -17,5 +17,8 @@ fun todoTask10(): Nothing = TODO(
 )
 
 fun task10(list: List<Int>): List<Int> {
-    return list.sortedWith(Comparator { o1, o2 -> o2 - o1 })
+    Collections.sort(list, object : Comparator<Int> {
+        override fun compare(o1: Int, o2: Int) = o2 - o1
+    })
+    return list
 }
