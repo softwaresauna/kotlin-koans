@@ -14,7 +14,7 @@ fun todoTask27(): Nothing = TODO(
     documentation = doc26()
 )
 
+
 fun checkInRange2(date: MyDate, first: MyDate, last: MyDate): Boolean {
-    todoTask27()
-//    return date in first..last
+    return date in first..last
 }
